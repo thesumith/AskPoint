@@ -26,19 +26,30 @@ document.addEventListener('click', (e) => {
 // Touch-friendly interactions
 document.addEventListener('touchstart', function() {}, {passive: true});
 
-// Smooth scrolling for navigation links
+// Standard navigation links (no smooth scrolling)
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
-        if (target) {
-            target.scrollIntoView({
-                behavior: 'smooth',
-                block: 'start'
-            });
+        const href = this.getAttribute('href');
+        
+        // Skip empty hash links
+        if (href === '#') {
+            return;
         }
+        
+        // Allow default browser behavior for anchor links
+        // No preventDefault() - let browser handle navigation naturally
     });
 });
+
+// Scroll behavior removed - using standard browser scrolling
+
+// Touch scrolling removed - using standard browser behavior
+
+// Touch event listeners removed
+
+// Swipe handling removed
+
+// Section tracking removed
 
 // Navbar background change on scroll
 window.addEventListener('scroll', () => {
@@ -155,6 +166,130 @@ document.querySelectorAll('.portfolio-item').forEach(item => {
     });
 });
 
+// Services navigation with arrows
+document.addEventListener('DOMContentLoaded', () => {
+    const servicesGrid = document.getElementById('servicesGrid');
+    const prevBtn = document.getElementById('prevService');
+    const nextBtn = document.getElementById('nextService');
+    
+    if (servicesGrid && prevBtn && nextBtn) {
+        let currentIndex = 0;
+        const serviceCards = servicesGrid.querySelectorAll('.service-card');
+        const totalCards = serviceCards.length;
+        
+        // Function to update button states and card visibility
+        const updateButtons = () => {
+            prevBtn.disabled = currentIndex === 0;
+            nextBtn.disabled = currentIndex === totalCards - 1;
+            
+            // Update card visual states
+            serviceCards.forEach((card, index) => {
+                card.classList.remove('active', 'prev', 'next');
+                
+                if (index === currentIndex) {
+                    card.classList.add('active');
+                } else if (index === currentIndex - 1) {
+                    card.classList.add('prev');
+                } else if (index === currentIndex + 1) {
+                    card.classList.add('next');
+                }
+            });
+            
+            // Update indicators
+            const indicators = document.querySelectorAll('.service-indicator');
+            indicators.forEach((indicator, index) => {
+                indicator.classList.toggle('active', index === currentIndex);
+            });
+        };
+        
+        // Function to scroll to specific card
+        const scrollToCard = (index) => {
+            const cardWidth = serviceCards[0].offsetWidth + parseInt(getComputedStyle(servicesGrid).gap);
+            servicesGrid.scrollTo({
+                left: index * cardWidth,
+                behavior: 'smooth'
+            });
+        };
+        
+        // Previous button click
+        prevBtn.addEventListener('click', () => {
+            if (currentIndex > 0) {
+                currentIndex--;
+                scrollToCard(currentIndex);
+                updateButtons();
+            }
+        });
+        
+        // Next button click
+        nextBtn.addEventListener('click', () => {
+            if (currentIndex < totalCards - 1) {
+                currentIndex++;
+                scrollToCard(currentIndex);
+                updateButtons();
+            }
+        });
+        
+        // Touch/swipe support
+        let startX = 0;
+        let startY = 0;
+        
+        servicesGrid.addEventListener('touchstart', (e) => {
+            startX = e.touches[0].clientX;
+            startY = e.touches[0].clientY;
+        });
+        
+        servicesGrid.addEventListener('touchend', (e) => {
+            const endX = e.changedTouches[0].clientX;
+            const endY = e.changedTouches[0].clientY;
+            const diffX = startX - endX;
+            const diffY = startY - endY;
+            
+            // Only handle horizontal swipes
+            if (Math.abs(diffX) > Math.abs(diffY) && Math.abs(diffX) > 50) {
+                if (diffX > 0 && currentIndex < totalCards - 1) {
+                    // Swipe left - next
+                    currentIndex++;
+                    scrollToCard(currentIndex);
+                } else if (diffX < 0 && currentIndex > 0) {
+                    // Swipe right - previous
+                    currentIndex--;
+                    scrollToCard(currentIndex);
+                }
+                updateButtons();
+            }
+        });
+        
+        // Add indicator click functionality
+        const indicators = document.querySelectorAll('.service-indicator');
+        indicators.forEach((indicator, index) => {
+            indicator.addEventListener('click', () => {
+                currentIndex = index;
+                scrollToCard(currentIndex);
+                updateButtons();
+            });
+        });
+
+        // Initialize button states
+        updateButtons();
+        
+        // Hide arrows on desktop (show only on mobile)
+        const checkScreenSize = () => {
+            if (window.innerWidth > 768) {
+                prevBtn.style.display = 'none';
+                nextBtn.style.display = 'none';
+                servicesGrid.style.overflowX = 'visible';
+            } else {
+                prevBtn.style.display = 'flex';
+                nextBtn.style.display = 'flex';
+                servicesGrid.style.overflowX = 'hidden';
+            }
+        };
+        
+        checkScreenSize();
+        window.addEventListener('resize', checkScreenSize);
+    }
+});
+
 // Add ripple animation CSS
 const style = document.createElement('style');
 style.textContent = `
@@ -163,6 +298,16 @@ style.textContent = `
             transform: scale(4);
             opacity: 0;
         }
+    }
+    
+    /* Services scroll indicator animation */
+    .services-section::after {
+        animation: fadeInOut 3s ease-in-out infinite;
+    }
+    
+    @keyframes fadeInOut {
+        0%, 100% { opacity: 0.5; }
+        50% { opacity: 1; }
     }
 `;
 document.head.appendChild(style);
