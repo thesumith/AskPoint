@@ -3,10 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="AskPoint Academy in Chitradurga offers premium data analytics education with expert mentors and job-ready courses.">
+    <meta name="description" content="AskPoint Solutions - Empowering Tier-2 Talent for Tier-1 Opportunities. Intensive offline bootcamp in Chitradurga for Python, SQL, AI-driven development with guaranteed interview opportunities.">
+    <meta name="keywords" content="AskPoint, Software Learning Hub Chitradurga, software learning hub, training in Chitradurga, SQL training Chitradurga, Python training Chitradurga, PowerBI training, Excel training, data analytics course Chitradurga, IT learning center CTA, computer training Chitradurga, programming courses Karnataka, data science training, business intelligence training, software courses Chitradurga, placement training institute">
+    <meta name="author" content="AskPoint Academy">
+    <meta name="robots" content="index, follow">
+    <meta name="geo.region" content="IN-KA">
+    <meta name="geo.placename" content="Chitradurga, Karnataka">
+    <meta name="geo.position" content="14.234125;76.393930">
+    <meta name="ICBM" content="14.234125, 76.393930">
     <meta name="theme-color" content="#1e293b">
-    <title>AskPoint Academy - Premium Data Education</title>
-    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="AskPoint - Software Learning Hub in Chitradurga">
+    <meta property="og:description" content="Premier Software Learning Hub in Chitradurga offering SQL, Python, PowerBI, Data Analytics courses with 100% placement assistance.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://askpoint.in">
+    <meta property="og:image" content="askpoint-logo.png">
+    <meta property="og:locale" content="en_IN">
+    <meta property="og:site_name" content="AskPoint Academy">
+    
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="AskPoint - Software Learning Hub in Chitradurga">
+    <meta name="twitter:description" content="Premier Software Learning Hub in Chitradurga offering SQL, Python, PowerBI, Data Analytics courses.">
+    <meta name="twitter:image" content="askpoint-logo.png">
+    
+    <title>AskPoint Solutions - Your Career in Code Starts Here | Intensive Tech Bootcamp Chitradurga</title>
+    <link rel="icon" type="image/x-icon" href="askpoint-favicon.ico">
     <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
     <link rel="preconnect" href="https://unpkg.com" crossorigin>
     <script src="https://cdn.tailwindcss.com"></script>
@@ -20,6 +43,9 @@
                         accent: '#f59e0b',
                         dark: '#1e293b',
                         light: '#f8fafc'
+                    },
+                    animation: {
+                        'spin-slow': 'spin 4s linear infinite',
                     }
                 }
             }
@@ -29,49 +55,145 @@
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "EducationalOrganization",
+        "name": "AskPoint Academy",
+        "alternateName": "AskPoint Software Learning Hub",
+        "description": "Premier Software Learning Hub in Chitradurga offering SQL, Python, PowerBI, Data Analytics courses with placement assistance",
+        "url": "https://askpoint.in",
+        "logo": "https://askpoint.in/askpoint-logo.png",
+        "image": "https://askpoint.in/askpoint-logo.png",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "6CQ6+4X4, Bank Colony, Pillekerenahalli",
+            "addressLocality": "Chitradurga",
+            "addressRegion": "Karnataka",
+            "postalCode": "577501",
+            "addressCountry": "IN"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "14.234125",
+            "longitude": "76.393930"
+        },
+        "telephone": "+917975423882",
+        "email": "admissions@askpoint.in",
+        "openingHours": "Mo-Sa 09:00-18:00",
+        "sameAs": [
+            "https://wa.me/917975423882"
+        ],
+        "offers": {
+            "@type": "Course",
+            "name": "Data Analytics Professional Course",
+            "description": "Master SQL, Python, PowerBI and Excel in our flagship 6-month program with real-world projects",
+            "provider": {
+                "@type": "EducationalOrganization",
+                "name": "AskPoint Academy"
+            }
+        },
+        "areaServed": {
+            "@type": "City",
+            "name": "Chitradurga"
+        }
+    }
+    </script>
 </head>
 <body class="bg-light font-sans antialiased">
     <!-- Navigation -->
-    <nav class="bg-white shadow-lg sticky top-0 z-50">
+    <nav class="bg-white bg-opacity-80 backdrop-blur-md shadow-lg sticky top-0 z-50 border-b border-white border-opacity-20">
+        <!-- Scroll Progress Bar -->
+        <div class="absolute top-0 left-0 h-1 bg-primary transition-all duration-200 ease-out z-10" id="scroll-progress" style="width: 0%;"></div>
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between h-24 items-center relative">
+            <div class="flex h-16 md:h-24 items-center relative">
+                <!-- Desktop logo -->
                 <div class="hidden md:flex items-center">
                     <div class="flex-shrink-0 flex items-center">
-                        <img src="askpoint-logo.png" alt="AskPoint Logo" class="h-12 w-auto">
+                        <div class="relative p-2 rounded-lg overflow-hidden">
+                            <!-- Animated border -->
+                            <div class="absolute inset-0 rounded-lg bg-gradient-to-r from-primary via-accent to-secondary animate-spin-slow opacity-75"></div>
+                            <div class="absolute inset-0.5 bg-white rounded-lg"></div>
+                            <img src="askpoint-logo.png" alt="AskPoint Logo" class="h-12 w-auto relative z-10">
+                        </div>
                     </div>
                 </div>
-                <div class="hidden md:block">
-                    <div class="ml-10 flex items-center space-x-8">
+                
+                <!-- Desktop navigation -->
+                <div class="hidden md:block ml-auto">
+                    <div class="flex items-center space-x-8">
                         <a href="#" class="text-dark hover:text-primary px-3 py-2 rounded-md text-lg font-medium">Home</a>
-                        <a href="#courses" class="text-dark hover:text-primary px-3 py-2 rounded-md text-lg font-medium">Courses</a>
+                        <a href="#bootcamp" class="text-dark hover:text-primary px-3 py-2 rounded-md text-lg font-medium">Bootcamp</a>
                         <a href="#facilities" class="text-dark hover:text-primary px-3 py-2 rounded-md text-lg font-medium">Facilities</a>
                         <a href="#contact" class="text-dark hover:text-primary px-3 py-2 rounded-md text-lg font-medium">Contact</a>
-                        <button class="bg-primary hover:bg-primary-dark text-white px-6 py-2 rounded-full font-medium transition duration-300 transform hover:scale-105 shadow-lg">
+                        <a href="https://wa.me/917975423882?text=Hi%2C%20I%27m%20interested%20in%20enrolling%20for%20courses%20at%20AskPoint%20Academy.%20Please%20provide%20me%20with%20enrollment%20details." target="_blank" class="bg-primary hover:bg-primary-dark text-white px-6 py-2 rounded-full font-medium transition duration-300 transform hover:scale-105 shadow-lg inline-block text-center">
                             Enroll Now
-                        </button>
+                        </a>
                     </div>
                 </div>
-                <div class="md:hidden flex items-center">
-                    <button id="menu-btn" class="text-dark" aria-controls="mobile-menu" aria-expanded="false" aria-label="Toggle menu">
+                
+                <!-- Mobile menu button - positioned absolutely to the right -->
+                <div class="md:hidden absolute right-0">
+                    <button id="menu-btn" class="text-dark hover:text-primary active:text-primary p-2 rounded-lg transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-opacity-50 hover:bg-gray-100 active:bg-primary active:text-white transform active:scale-95" aria-controls="mobile-menu" aria-expanded="false" aria-label="Toggle menu">
                         <i data-feather="menu" class="h-6 w-6"></i>
                     </button>
                 </div>
+                
                 <!-- Mobile logo center positioning -->
                 <div class="md:hidden absolute left-1/2 transform -translate-x-1/2">
-                    <img src="askpoint-logo.png" alt="AskPoint Logo" class="h-10 w-auto">
+                    <div class="relative p-1 rounded-lg overflow-hidden">
+                        <!-- Animated border -->
+                        <div class="absolute inset-0 rounded-lg bg-gradient-to-r from-primary via-accent to-secondary animate-spin-slow opacity-75"></div>
+                        <div class="absolute inset-0.5 bg-white rounded-lg"></div>
+                        <img src="askpoint-logo.png" alt="AskPoint Logo" class="h-8 w-auto relative z-10">
+                    </div>
                 </div>
             </div>
         </div>
-        <!-- Mobile menu -->
-        <div id="mobile-menu" class="hidden md:hidden bg-white pb-4">
-            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-                <a href="#" class="text-dark hover:bg-primary hover:text-white block px-3 py-2 rounded-md text-base font-medium">Home</a>
-                <a href="#courses" class="text-dark hover:bg-primary hover:text-white block px-3 py-2 rounded-md text-base font-medium">Courses</a>
-                <a href="#facilities" class="text-dark hover:bg-primary hover:text-white block px-3 py-2 rounded-md text-base font-medium">Facilities</a>
-                <a href="#contact" class="text-dark hover:bg-primary hover:text-white block px-3 py-2 rounded-md text-base font-medium">Contact</a>
-                <button class="bg-primary text-white w-full px-3 py-2 rounded-md text-base font-medium mt-2">
-                    Enroll Now
-                </button>
+        <!-- Mobile menu overlay -->
+        <div id="mobile-menu" class="fixed inset-0 z-50 md:hidden opacity-0 pointer-events-none transition-all duration-300 ease-in-out">
+            <!-- Background overlay with enhanced blur -->
+            <div class="absolute inset-0 bg-dark bg-opacity-80 backdrop-blur-lg transition-all duration-300"></div>
+            
+            <!-- Menu content -->
+            <div class="relative h-full flex flex-col">
+                <!-- Header with close button only (no white background) -->
+                <div class="flex justify-end items-center p-6">
+                    <button id="close-menu-btn" class="text-white hover:text-accent p-2 rounded-lg transition-colors" aria-label="Close menu">
+                        <i data-feather="x" class="h-6 w-6"></i>
+                    </button>
+                </div>
+                
+                <!-- Menu items -->
+                <div class="flex-1 flex flex-col items-center text-center px-6 pt-16 pb-16 transform translate-y-8 transition-all duration-500 ease-out" id="menu-items">
+                    <div class="flex flex-col space-y-8 mt-8">
+                        <a href="#" class="text-white text-3xl font-bold hover:text-accent transition-all duration-200 transform hover:scale-105">Home</a>
+                        <a href="#bootcamp" class="text-white text-3xl font-bold hover:text-accent transition-all duration-200 transform hover:scale-105">Bootcamp</a>
+                        <a href="#facilities" class="text-white text-3xl font-bold hover:text-accent transition-all duration-200 transform hover:scale-105">Facilities</a>
+                        <a href="#contact" class="text-white text-3xl font-bold hover:text-accent transition-all duration-200 transform hover:scale-105">Contact</a>
+                        
+                        <!-- Apply Now button -->
+                        <div class="mt-12">
+                            <a href="https://wa.me/917975423882?text=Hi%2C%20I%27m%20interested%20in%20applying%20for%20AskPoint%20Academy" target="_blank" class="bg-accent hover:bg-accent-dark text-white px-12 py-4 rounded-full text-xl font-bold transition-all transform hover:scale-105 shadow-lg">
+                                Apply Now
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Bottom stats -->
+                <div class="flex justify-around items-center p-8 text-white">
+                    <div class="text-center">
+                        <div class="text-3xl font-bold text-accent">95%</div>
+                        <div class="text-sm opacity-70">Placement Rate</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-3xl font-bold text-accent">₹4.5 LPA</div>
+                        <div class="text-sm opacity-70">Average Starting Salary</div>
+                    </div>
+                </div>
             </div>
         </div>
     </nav>
@@ -82,109 +204,400 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32 relative z-10">
             <div class="text-center">
                 <h1 class="text-5xl md:text-7xl font-extrabold text-white mb-6 animate__animated animate__fadeInDown">
-                    <span id="hero-text" style="transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);">Unlock Your <span class="text-accent">Data Potential</span></span>
+                    <span id="hero-text" style="transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);">Your Career in <span class="text-accent">Code</span></span>
                 </h1>
-                <p class="text-xl md:text-2xl text-white mb-10 max-w-3xl mx-auto animate__animated animate__fadeIn animate__delay-1s">
-                    Expert-led data analytics training in Chitradurga. Build in-demand skills and advance your career with hands-on learning.
+                <p class="text-xl md:text-2xl text-white mb-4 max-w-3xl mx-auto animate__animated animate__fadeIn animate__delay-1s">
+                    <strong>Empowering Tier-2 Talent for Tier-1 Opportunities</strong>
+                </p>
+                <p class="text-lg md:text-xl text-white mb-10 max-w-4xl mx-auto animate__animated animate__fadeIn animate__delay-1s">
+                    Join our intensive offline bootcamp in Chitradurga. 8 hours/day for 3 months of rigorous, hands-on training with AI-driven workflows, real-world projects, and guaranteed interview opportunities.
                 </p>
                 <div class="animate__animated animate__fadeIn animate__delay-2s flex flex-col sm:flex-row items-center justify-center gap-4">
-                    <a href="#courses" class="bg-accent hover:bg-accent-dark text-white px-8 py-4 rounded-full font-bold text-lg transform transition hover:scale-105 shadow-xl w-full sm:w-auto text-center">
-                        View Course
+                    <a href="#bootcamp" class="bg-accent hover:bg-accent-dark text-white px-8 py-4 rounded-full font-bold text-lg transform transition hover:scale-105 shadow-xl w-full sm:w-auto text-center">
+                        🚀 Join Bootcamp
                     </a>
-                    <a href="https://wa.me/917975423882?text=Hi%2C%20I%27m%20interested%20in%20booking%20a%20demo%20for%20AskPoint%20Academy" target="_blank" class="bg-transparent border-2 border-white text-white hover:bg-white hover:text-dark px-8 py-4 rounded-full font-bold text-lg transform transition hover:scale-105 w-full sm:w-auto text-center">
-                        Book a Demo
+                    <a href="https://wa.me/917406561547?text=Hi%2C%20I%27m%20interested%20in%20learning%20more%20about%20AskPoint%20Solutions%20bootcamp" target="_blank" class="bg-transparent border-2 border-white text-white hover:bg-white hover:text-dark px-8 py-4 rounded-full font-bold text-lg transform transition hover:scale-105 w-full sm:w-auto text-center">
+                        💬 Get Info
                     </a>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Features Section -->
+    <!-- About AskPoint Solutions Section -->
     <div class="bg-white py-20">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
-                <h2 class="text-4xl font-bold text-dark mb-4">Why Choose <span class="text-primary">AskPoint</span></h2>
-                <p class="text-lg text-gray-600 max-w-3xl mx-auto">We combine world-class curriculum with personalized mentorship to create data professionals ready for the global market.</p>
+                <h2 class="text-4xl font-bold text-dark mb-4">About <span class="text-primary">AskPoint Solutions</span></h2>
+                <p class="text-lg text-gray-600 max-w-4xl mx-auto">At AskPoint Solutions, we believe that geographical location should never limit career opportunities. Our mission is to empower students from tier-2 cities with the right skills and industry exposure to launch successful tech careers through rigorous, industry-aligned training.</p>
             </div>
-            <div class="grid md:grid-cols-3 gap-10">
-                <div class="bg-light p-8 rounded-xl shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
-                    <div class="bg-primary bg-opacity-10 w-16 h-16 rounded-full flex items-center justify-center mb-6">
-                        <i data-feather="award" class="h-8 w-8 text-primary"></i>
+            
+            <!-- What Makes Us Different -->
+            <div class="mb-16">
+                <h3 class="text-3xl font-bold text-dark text-center mb-12">🌟 What Makes Us <span class="text-accent">Different</span></h3>
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="bg-light p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
+                        <div class="bg-primary bg-opacity-10 w-16 h-16 rounded-full flex items-center justify-center mb-4 mx-auto">
+                            <span class="text-2xl">🔥</span>
+                        </div>
+                        <h4 class="text-xl font-bold text-dark mb-3 text-center">Intensive Training</h4>
+                        <p class="text-gray-600 text-center">8 hours per day for 3 months — focused learning with hands-on projects based on real-world scenarios.</p>
                     </div>
-                    <h3 class="text-xl font-bold text-dark mb-3">Industry Recognized Certification</h3>
-                    <p class="text-gray-600">Our certifications are recognized by top tech companies and serve as a mark of excellence.</p>
+                    <div class="bg-light p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
+                        <div class="bg-secondary bg-opacity-10 w-16 h-16 rounded-full flex items-center justify-center mb-4 mx-auto">
+                            <span class="text-2xl">🧠</span>
+                        </div>
+                        <h4 class="text-xl font-bold text-dark mb-3 text-center">Practical Approach</h4>
+                        <p class="text-gray-600 text-center">End-to-end SDLC training — from requirements to deployment — with AI in practice, including prompt engineering.</p>
+                    </div>
+                    <div class="bg-light p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
+                        <div class="bg-accent bg-opacity-10 w-16 h-16 rounded-full flex items-center justify-center mb-4 mx-auto">
+                            <span class="text-2xl">👨‍🏫</span>
+                        </div>
+                        <h4 class="text-xl font-bold text-dark mb-3 text-center">World-Class Mentors</h4>
+                        <p class="text-gray-600 text-center">Our mentors include graduates from IIMs, IITs, and professionals currently working at MAANG companies.</p>
+                    </div>
+                    <div class="bg-light p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
+                        <div class="bg-primary bg-opacity-10 w-16 h-16 rounded-full flex items-center justify-center mb-4 mx-auto">
+                            <span class="text-2xl">💬</span>
+                        </div>
+                        <h4 class="text-xl font-bold text-dark mb-3 text-center">Guaranteed Mentorship</h4>
+                        <p class="text-gray-600 text-center">Every student receives personalized one-on-one mentorship and continuous guidance throughout the bootcamp.</p>
+                    </div>
                 </div>
-                <div class="bg-light p-8 rounded-xl shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
-                    <div class="bg-secondary bg-opacity-10 w-16 h-16 rounded-full flex items-center justify-center mb-6">
-                        <i data-feather="briefcase" class="h-8 w-8 text-secondary"></i>
+            </div>
+
+            <!-- Unique Advantages -->
+            <div class="bg-gray-50 p-8 rounded-xl">
+                <h3 class="text-2xl font-bold text-dark mb-6 text-center">⚙️ Unique Advantages</h3>
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div class="flex items-start">
+                        <div class="bg-primary bg-opacity-10 p-2 rounded-full mr-4">
+                            <i data-feather="user" class="h-5 w-5 text-primary"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-dark mb-1">One-on-one mentorship</h4>
+                            <p class="text-gray-600">Personalized guidance tailored to your learning pace and career goals.</p>
+                        </div>
                     </div>
-                    <h3 class="text-xl font-bold text-dark mb-3">100% Placement Assistance</h3>
-                    <p class="text-gray-600">We partner with leading companies to help you land your dream job after course completion.</p>
-                </div>
-                <div class="bg-light p-8 rounded-xl shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
-                    <div class="bg-accent bg-opacity-10 w-16 h-16 rounded-full flex items-center justify-center mb-6">
-                        <i data-feather="users" class="h-8 w-8 text-accent"></i>
+                    <div class="flex items-start">
+                        <div class="bg-secondary bg-opacity-10 p-2 rounded-full mr-4">
+                            <i data-feather="zap" class="h-5 w-5 text-secondary"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-dark mb-1">AI-driven workflows</h4>
+                            <p class="text-gray-600">Integrated into daily learning with modern development practices.</p>
+                        </div>
                     </div>
-                    <h3 class="text-xl font-bold text-dark mb-3">Expert Mentors</h3>
-                    <p class="text-gray-600">Learn from industry veterans with 10+ years of experience in data analytics and visualization.</p>
+                    <div class="flex items-start">
+                        <div class="bg-accent bg-opacity-10 p-2 rounded-full mr-4">
+                            <i data-feather="monitor" class="h-5 w-5 text-accent"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-dark mb-1">Dedicated coding lab</h4>
+                            <p class="text-gray-600">On-premise laboratory with latest technology and infrastructure.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Courses Section -->
-    <div id="courses" class="bg-gray-50 py-20 scroll-mt-24">
+    <!-- Why Data & AI Section -->
+    <div class="bg-gray-50 py-20">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
-                <h2 class="text-4xl font-bold text-dark mb-4">Our <span class="text-primary">Premium</span> Courses</h2>
-                <p class="text-lg text-gray-600 max-w-3xl mx-auto">Comprehensive programs designed to make you job-ready in the booming field of data analytics.</p>
+                <h2 class="text-4xl font-bold text-dark mb-4">🤖 Why Data & AI? <span class="text-primary">Why Now?</span></h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">The digital transformation has created an unprecedented demand for skilled professionals. From finance to healthcare and retail, data roles powered by Python, SQL, analytics, and AI are redefining how industries work.</p>
             </div>
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Course 1 - Available -->
-                <div class="bg-white rounded-xl overflow-hidden shadow-lg transform transition hover:scale-105">
-                    <div class="h-48 bg-gradient-to-r from-primary to-secondary flex items-center justify-center">
-                        <i data-feather="database" class="h-16 w-16 text-white"></i>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
+                    <div class="bg-primary bg-opacity-10 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                        <span class="text-2xl">📈</span>
                     </div>
-                    <div class="p-8">
-                        <h3 class="text-2xl font-bold text-dark mb-3">Data Analytics Professional</h3>
-                        <p class="text-gray-600 mb-6">Master SQL, Python, PowerBI and Excel in our flagship 6-month program with real-world projects.</p>
+                    <h3 class="text-xl font-bold text-dark mb-3">High Growth Market</h3>
+                    <p class="text-gray-600">Entry-level data and software development roles are growing at 40% year-over-year across all industries.</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
+                    <div class="bg-secondary bg-opacity-10 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                        <span class="text-2xl">💼</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-dark mb-3">Employer Demands</h3>
+                    <p class="text-gray-600">Employers look for candidates with real projects and full SDLC fluency — not just theoretical knowledge.</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
+                    <div class="bg-accent bg-opacity-10 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                        <span class="text-2xl">⚡</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-dark mb-3">AI-Enabled Workflows</h3>
+                    <p class="text-gray-600">AI-powered tools are transforming development. Professionals who master both fundamentals and AI deliver better, faster, smarter software.</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
+                    <div class="bg-primary bg-opacity-10 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                        <span class="text-2xl">🌍</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-dark mb-3">Rising Tier-2 Talent</h3>
+                    <p class="text-gray-600">With structured mentorship and hands-on learning, tier-2 talent is rapidly meeting global tech demand.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Comprehensive Curriculum Section -->
+    <div id="bootcamp" class="bg-white py-20 scroll-mt-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-dark mb-4">🧩 Our Comprehensive <span class="text-primary">Curriculum</span></h2>
+                <p class="text-lg text-gray-600 max-w-4xl mx-auto">Join our intensive offline bootcamp built for Tier-2 students. We provide rigorous, hands-on training that mirrors real-world challenges and prepares you for the next generation of tech roles.</p>
+            </div>
+            
+            <!-- Curriculum Grid -->
+            <div class="grid md:grid-cols-2 gap-8 mb-16">
+                <div class="bg-light p-8 rounded-xl shadow-lg hover:shadow-xl transition duration-300">
+                    <div class="flex items-center mb-6">
+                        <span class="text-3xl mr-4">🐍</span>
+                        <h3 class="text-2xl font-bold text-dark">Python Programming Mastery</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">From syntax and data types to OOP, decorators, generators, and advanced modules.</p>
+                    <ul class="text-gray-600 space-y-2">
+                        <li>• Core Python fundamentals and syntax</li>
+                        <li>• Object-oriented programming concepts</li>
+                        <li>• Advanced features: decorators, generators</li>
+                        <li>• Popular libraries and frameworks</li>
+                    </ul>
+                        </div>
+                
+                <div class="bg-light p-8 rounded-xl shadow-lg hover:shadow-xl transition duration-300">
+                    <div class="flex items-center mb-6">
+                        <span class="text-3xl mr-4">🗄️</span>
+                        <h3 class="text-2xl font-bold text-dark">SQL Database Expertise</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">Master database design, queries, window functions, and optimization.</p>
+                    <ul class="text-gray-600 space-y-2">
+                        <li>• Database design and normalization</li>
+                        <li>• Complex queries and joins</li>
+                        <li>• Window functions and analytics</li>
+                        <li>• Performance optimization techniques</li>
+                    </ul>
+                </div>
+                
+                <div class="bg-light p-8 rounded-xl shadow-lg hover:shadow-xl transition duration-300">
+                    <div class="flex items-center mb-6">
+                        <span class="text-3xl mr-4">🤖</span>
+                        <h3 class="text-2xl font-bold text-dark">AI-Assisted Development</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">Learn prompt engineering, AI-driven code/test generation, and documentation using safe AI practices.</p>
+                    <ul class="text-gray-600 space-y-2">
+                        <li>• Prompt engineering techniques</li>
+                        <li>• AI-powered code generation</li>
+                        <li>• Automated testing with AI</li>
+                        <li>• Safe AI development practices</li>
+                    </ul>
+                    </div>
+                
+                <div class="bg-light p-8 rounded-xl shadow-lg hover:shadow-xl transition duration-300">
+                    <div class="flex items-center mb-6">
+                        <span class="text-3xl mr-4">🔁</span>
+                        <h3 class="text-2xl font-bold text-dark">Full SDLC Training</h3>
+                        </div>
+                    <p class="text-gray-600 mb-4">Understand the entire cycle — requirements, design, implementation, testing, deployment, and maintenance.</p>
+                    <ul class="text-gray-600 space-y-2">
+                        <li>• Requirements analysis and design</li>
+                        <li>• Implementation best practices</li>
+                        <li>• Testing and quality assurance</li>
+                        <li>• Deployment and maintenance</li>
+                    </ul>
+                    </div>
+                </div>
+                    </div>
+                    </div>
+
+    <!-- Learning Journey Section -->
+    <div class="bg-gray-50 py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-dark mb-4">🧭 Your Learning Journey — <span class="text-primary">Climbing to Success</span></h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">A structured 12-week intensive program designed to transform you from beginner to industry-ready professional.</p>
+            </div>
+            
+            <!-- Journey Timeline -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-2 relative">
+                    <div class="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-primary text-white rounded-full w-8 h-8 flex items-center justify-center font-bold">1</div>
                         <div class="text-center">
-                            <button class="text-primary hover:text-primary-dark font-medium">View Details →</button>
+                        <span class="text-4xl mb-4 block">🏕️</span>
+                        <h3 class="text-xl font-bold text-dark mb-3">Weeks 1–2: The Basecamp</h3>
+                        <h4 class="text-lg font-semibold text-primary mb-2">Foundations</h4>
+                        <p class="text-gray-600">Python basics, development environment setup, version control, and fundamental programming concepts.</p>
+                        </div>
+                    </div>
+                
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-2 relative">
+                    <div class="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-secondary text-white rounded-full w-8 h-8 flex items-center justify-center font-bold">2</div>
+                    <div class="text-center">
+                        <span class="text-4xl mb-4 block">🧗</span>
+                        <h3 class="text-xl font-bold text-dark mb-3">Weeks 3–8: The Ascent</h3>
+                        <h4 class="text-lg font-semibold text-secondary mb-2">Core Skills</h4>
+                        <p class="text-gray-600">Advanced Python, SQL mastery, database design, API development, and real-world project work.</p>
+                </div>
+                    </div>
+                
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-2 relative">
+                    <div class="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-accent text-white rounded-full w-8 h-8 flex items-center justify-center font-bold">3</div>
+                    <div class="text-center">
+                        <span class="text-4xl mb-4 block">🏔️</span>
+                        <h3 class="text-xl font-bold text-dark mb-3">Weeks 9–10: The Ridge</h3>
+                        <h4 class="text-lg font-semibold text-accent mb-2">Applications</h4>
+                        <p class="text-gray-600">AI integration, full-stack development, deployment strategies, and capstone project development.</p>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-2 relative">
+                    <div class="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-primary text-white rounded-full w-8 h-8 flex items-center justify-center font-bold">4</div>
+                        <div class="text-center">
+                        <span class="text-4xl mb-4 block">🏁</span>
+                        <h3 class="text-xl font-bold text-dark mb-3">Weeks 11–12: The Summit</h3>
+                        <h4 class="text-lg font-semibold text-primary mb-2">Interview Prep</h4>
+                        <p class="text-gray-600">Portfolio optimization, mock interviews, technical assessments, and career placement support.</p>
                         </div>
                     </div>
                 </div>
-                <!-- Course 2 - Coming Soon -->
-                <div class="bg-white rounded-xl overflow-hidden shadow-lg opacity-60 relative">
-                    <div class="h-48 bg-gradient-to-r from-gray-300 to-gray-400 flex items-center justify-center">
-                        <i data-feather="lock" class="h-16 w-16 text-gray-500"></i>
-                    </div>
-                    <div class="absolute top-4 right-4 bg-accent text-white px-3 py-1 rounded-full text-sm font-bold">
-                        Coming Soon
-                    </div>
-                    <div class="p-8">
-                        <h3 class="text-2xl font-bold text-gray-400 mb-3">Python for Data Science</h3>
-                        <p class="text-gray-400 mb-6">Comprehensive 3-month course covering Pandas, NumPy, Matplotlib and machine learning basics.</p>
-                        <div class="text-center">
-                            <button class="text-gray-400 font-medium cursor-not-allowed" disabled>Coming Soon</button>
+        </div>
+    </div>
+
+    <!-- Founder's Message Section -->
+    <div class="bg-white py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-dark mb-4">👨‍💼 Founder's <span class="text-primary">Message</span></h2>
+            </div>
+            
+            <div class="bg-gradient-to-r from-primary to-secondary p-1 rounded-2xl shadow-2xl max-w-4xl mx-auto">
+                <div class="bg-white p-8 md:p-12 rounded-2xl">
+                    <div class="flex flex-col md:flex-row items-center md:items-start gap-8">
+                        <!-- Profile Image Placeholder -->
+                        <div class="flex-shrink-0">
+                            <div class="w-32 h-32 bg-gradient-to-r from-primary to-secondary rounded-full flex items-center justify-center shadow-lg">
+                                <span class="text-4xl font-bold text-white">LN</span>
+                            </div>
+                        </div>
+                        
+                        <!-- Content -->
+                        <div class="flex-1 text-center md:text-left">
+                            <h3 class="text-2xl font-bold text-dark mb-2">Lokesh N</h3>
+                            <p class="text-primary font-semibold mb-4">IIM Graduate | Amazon (Current) | Ex-Volvo | AI & Software Development Specialist</p>
+                            
+                            <div class="bg-gray-50 p-6 rounded-xl mb-6">
+                                <p class="text-gray-700 italic text-lg leading-relaxed">
+                                    "As lifelong learners, we believe tier-2 talent deserves tier-1 opportunities. The gap between college and industry has never been wider — but with the right training, it's absolutely bridgeable."
+                                </p>
+                            </div>
+                            
+                            <div class="text-gray-600 space-y-4 text-left">
+                                <p>Our bootcamp is not just about coding; it's about building problem-solvers who can thrive in the AI-driven economy.</p>
+                                
+                                <p>I'm personally leading multiple local IT infrastructure projects right here in Chitradurga, where students will engage in real use cases and live projects. This isn't theory — it's preparation for the actual challenges you'll face in your tech career.</p>
+                                
+                                <p class="text-accent font-semibold text-lg">"Work hard, play hard."</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <!-- Course 3 - Coming Soon -->
-                <div class="bg-white rounded-xl overflow-hidden shadow-lg opacity-60 relative">
-                    <div class="h-48 bg-gradient-to-r from-gray-300 to-gray-400 flex items-center justify-center">
-                        <i data-feather="lock" class="h-16 w-16 text-gray-500"></i>
-                    </div>
-                    <div class="absolute top-4 right-4 bg-accent text-white px-3 py-1 rounded-full text-sm font-bold">
-                        Coming Soon
-                    </div>
-                    <div class="p-8">
-                        <h3 class="text-2xl font-bold text-gray-400 mb-3">Business Intelligence Mastery</h3>
-                        <p class="text-gray-400 mb-6">Advanced PowerBI and Tableau training for creating stunning dashboards and visualizations.</p>
-                        <div class="text-center">
-                            <button class="text-gray-400 font-medium cursor-not-allowed" disabled>Coming Soon</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Interview Guarantee Program Section -->
+    <div class="bg-gray-50 py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-dark mb-4">🎯 Interview Guarantee <span class="text-primary">Program</span></h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">Upon successful completion of all program requirements, AskPoint Solutions guarantees interview opportunities through our partner network.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8 mb-12">
+                <!-- Academic Performance -->
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition duration-300">
+                    <div class="text-center mb-6">
+                        <div class="bg-primary bg-opacity-10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <span class="text-2xl">1️⃣</span>
                         </div>
+                        <h3 class="text-xl font-bold text-dark mb-4">Academic Performance</h3>
                     </div>
+                    <ul class="text-gray-600 space-y-3">
+                        <li class="flex items-start">
+                            <i data-feather="check" class="h-5 w-5 text-secondary mr-2 mt-0.5 flex-shrink-0"></i>
+                            <span>90% attendance across all sessions</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-feather="check" class="h-5 w-5 text-secondary mr-2 mt-0.5 flex-shrink-0"></i>
+                            <span>Participation in all mock interviews & code reviews</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-feather="check" class="h-5 w-5 text-secondary mr-2 mt-0.5 flex-shrink-0"></i>
+                            <span>Minimum 70% in milestone assessments</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-feather="check" class="h-5 w-5 text-secondary mr-2 mt-0.5 flex-shrink-0"></i>
+                            <span>Completion of all projects with documentation</span>
+                        </li>
+                    </ul>
                 </div>
+                
+                <!-- Portfolio Requirements -->
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition duration-300">
+                    <div class="text-center mb-6">
+                        <div class="bg-secondary bg-opacity-10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <span class="text-2xl">2️⃣</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-dark mb-4">Portfolio Requirements</h3>
+                    </div>
+                    <ul class="text-gray-600 space-y-3">
+                        <li class="flex items-start">
+                            <i data-feather="check" class="h-5 w-5 text-secondary mr-2 mt-0.5 flex-shrink-0"></i>
+                            <span>Professional resume reviewed by our career team</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-feather="check" class="h-5 w-5 text-secondary mr-2 mt-0.5 flex-shrink-0"></i>
+                            <span>Optimized LinkedIn profile meeting professional standards</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-feather="check" class="h-5 w-5 text-secondary mr-2 mt-0.5 flex-shrink-0"></i>
+                            <span>Complete job-ready project portfolio</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Professional Development -->
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition duration-300">
+                    <div class="text-center mb-6">
+                        <div class="bg-accent bg-opacity-10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <span class="text-2xl">3️⃣</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-dark mb-4">Professional Development</h3>
+                    </div>
+                    <ul class="text-gray-600 space-y-3">
+                        <li class="flex items-start">
+                            <i data-feather="check" class="h-5 w-5 text-secondary mr-2 mt-0.5 flex-shrink-0"></i>
+                            <span>Attend all mock interviews</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-feather="check" class="h-5 w-5 text-secondary mr-2 mt-0.5 flex-shrink-0"></i>
+                            <span>Complete aptitude and communication assessments</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-feather="check" class="h-5 w-5 text-secondary mr-2 mt-0.5 flex-shrink-0"></i>
+                            <span>Demonstrate technical interview proficiency</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- CTA -->
+            <div class="text-center">
+                <a href="https://wa.me/917406561547?text=Hi%2C%20I%27m%20interested%20in%20the%20Interview%20Guarantee%20Program%20at%20AskPoint%20Solutions" target="_blank" class="bg-accent hover:bg-accent-dark text-white px-8 py-4 rounded-full font-bold text-lg transform transition hover:scale-105 shadow-xl inline-block">
+                    🚀 Secure Your Future - Apply Now
+                </a>
             </div>
         </div>
     </div>
@@ -194,7 +607,7 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
                 <h2 class="text-4xl font-bold text-dark mb-4">World-Class <span class="text-primary">Facilities</span></h2>
-                <p class="text-lg text-gray-600 max-w-3xl mx-auto">Our Chitradurga institute offers premium learning environment designed for your success.</p>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">AskPoint - Premier Software Learning Hub in Chitradurga offering world-class facilities for software learning, data analytics courses, and programming education.</p>
             </div>
             <div class="grid md:grid-cols-2 gap-8 mb-12">
                 <div class="bg-gray-50 p-8 rounded-xl">
@@ -259,68 +672,6 @@
         </div>
     </div>
 
-    <!-- Testimonials Section -->
-    <div class="bg-primary py-20">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl font-bold text-white mb-4">What Our <span class="text-accent">Students</span> Say</h2>
-                <p class="text-lg text-white text-opacity-80 max-w-3xl mx-auto">Hear from our alumni who transformed their careers with AskPoint Academy.</p>
-            </div>
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg p-8 rounded-xl border border-white border-opacity-20">
-                    <div class="flex items-center mb-6">
-                        <img src="http://static.photos/people/200x200/1" alt="Student" class="w-12 h-12 rounded-full object-cover mr-4" loading="lazy" decoding="async">
-                        <div>
-                            <h4 class="font-bold text-white">Rahul Sharma</h4>
-                            <p class="text-white text-opacity-70">Data Analyst at TechCorp</p>
-                        </div>
-                    </div>
-                    <p class="text-white text-opacity-90 italic">"The PowerBI course completely changed my career trajectory. Within 3 months of completing the program, I doubled my salary."</p>
-                    <div class="flex mt-4">
-                        <i data-feather="star" class="h-5 w-5 text-yellow-300"></i>
-                        <i data-feather="star" class="h-5 w-5 text-yellow-300"></i>
-                        <i data-feather="star" class="h-5 w-5 text-yellow-300"></i>
-                        <i data-feather="star" class="h-5 w-5 text-yellow-300"></i>
-                        <i data-feather="star" class="h-5 w-5 text-yellow-300"></i>
-                    </div>
-                </div>
-                <div class="bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg p-8 rounded-xl border border-white border-opacity-20">
-                    <div class="flex items-center mb-6">
-                        <img src="http://static.photos/people/200x200/2" alt="Student" class="w-12 h-12 rounded-full object-cover mr-4" loading="lazy" decoding="async">
-                        <div>
-                            <h4 class="font-bold text-white">Priya Patel</h4>
-                            <p class="text-white text-opacity-70">Business Intelligence Developer</p>
-                        </div>
-                    </div>
-                    <p class="text-white text-opacity-90 italic">"The hands-on projects and mentorship I received at AskPoint were invaluable. I went from knowing nothing about SQL to writing complex queries."</p>
-                    <div class="flex mt-4">
-                        <i data-feather="star" class="h-5 w-5 text-yellow-300"></i>
-                        <i data-feather="star" class="h-5 w-5 text-yellow-300"></i>
-                        <i data-feather="star" class="h-5 w-5 text-yellow-300"></i>
-                        <i data-feather="star" class="h-5 w-5 text-yellow-300"></i>
-                        <i data-feather="star" class="h-5 w-5 text-yellow-300"></i>
-                    </div>
-                </div>
-                <div class="bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg p-8 rounded-xl border border-white border-opacity-20">
-                    <div class="flex items-center mb-6">
-                        <img src="http://static.photos/people/200x200/3" alt="Student" class="w-12 h-12 rounded-full object-cover mr-4" loading="lazy" decoding="async">
-                        <div>
-                            <h4 class="font-bold text-white">Ankit Verma</h4>
-                            <p class="text-white text-opacity-70">Data Scientist</p>
-                        </div>
-                    </div>
-                    <p class="text-white text-opacity-90 italic">"The Python for Data Science course gave me the confidence to apply for advanced roles. The instructors are truly industry experts."</p>
-                    <div class="flex mt-4">
-                        <i data-feather="star" class="h-5 w-5 text-yellow-300"></i>
-                        <i data-feather="star" class="h-5 w-5 text-yellow-300"></i>
-                        <i data-feather="star" class="h-5 w-5 text-yellow-300"></i>
-                        <i data-feather="star" class="h-5 w-5 text-yellow-300"></i>
-                        <i data-feather="star" class="h-5 w-5 text-yellow-300"></i>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 
     <!-- Contact Section -->
     <div id="contact" class="bg-white py-20 scroll-mt-24">
@@ -339,7 +690,7 @@
                             </div>
                             <div>
                                 <h4 class="font-medium text-dark mb-1">Our Institute</h4>
-                                <p class="text-gray-600">6CQ6+4X4, Bank Colony, Chitradurga, Pillekerenahalli, Karnataka 577501</p>
+                                <p class="text-gray-600">Bank Colony, Chitradurga, Pillekerenahalli, Karnataka – 577501</p>
                             </div>
                         </div>
                         <div class="flex items-start">
@@ -357,7 +708,8 @@
                             </div>
                             <div>
                                 <h4 class="font-medium text-dark mb-1">Call Us</h4>
-                                <p class="text-gray-600">+91 7975423882</p>
+                                <p class="text-gray-600">📞 +91 7975423882 (Sunil Rao)</p>
+                                <p class="text-gray-600">📞 +91 7406561547 (Lokesh N)</p>
                             </div>
                         </div>
                         <div class="flex items-start">
@@ -372,33 +724,35 @@
                     </div>
                 </div>
                 <div class="bg-light p-8 rounded-xl shadow-lg">
-                    <h3 class="text-2xl font-bold text-dark mb-6">Send Us a Message</h3>
-                    <form>
+                    <h3 class="text-2xl font-bold text-dark mb-6">💻 Ready to Start Your Tech Career?</h3>
+                    <p class="text-gray-600 mb-6">Get in touch with us to begin your transformation journey. We're here to help you become part of the digital revolution.</p>
+                    <form id="contact-form">
                         <div class="mb-6">
                             <label for="name" class="block text-gray-700 font-medium mb-2">Full Name</label>
-                            <input type="text" id="name" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="Enter your name">
+                            <input type="text" id="name" name="name" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="Enter your name" required>
                         </div>
                         <div class="mb-6">
                             <label for="email" class="block text-gray-700 font-medium mb-2">Email Address</label>
-                            <input type="email" id="email" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="Enter your email">
+                            <input type="email" id="email" name="email" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="Enter your email" required>
                         </div>
                         <div class="mb-6">
                             <label for="phone" class="block text-gray-700 font-medium mb-2">Phone Number</label>
-                            <input type="tel" id="phone" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="Enter your phone number">
+                            <input type="tel" id="phone" name="phone" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="Enter your phone number" required>
                         </div>
                         <div class="mb-6">
-                            <label for="course" class="block text-gray-700 font-medium mb-2">Course Interested In</label>
-                            <select id="course" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent">
-                                <option value="">Select a course</option>
-                                <option value="data-analytics">Data Analytics Professional</option>
+                            <label for="course" class="block text-gray-700 font-medium mb-2">Program Interested In</label>
+                            <select id="course" name="course" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent">
+                                <option value="">Select a program</option>
+                                <option value="Intensive Tech Bootcamp">Intensive Tech Bootcamp (3 months)</option>
+                                <option value="Interview Guarantee Program">Interview Guarantee Program</option>
                             </select>
                         </div>
                         <div class="mb-6">
                             <label for="message" class="block text-gray-700 font-medium mb-2">Your Message</label>
-                            <textarea id="message" rows="4" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="Write your message here"></textarea>
+                            <textarea id="message" name="message" rows="4" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="Write your message here"></textarea>
                         </div>
                         <button type="submit" class="w-full bg-primary hover:bg-primary-dark text-white px-6 py-3 rounded-lg font-bold text-lg transform transition hover:scale-105 shadow-lg">
-                            Submit Message
+                            🚀 Send to WhatsApp
                         </button>
                     </form>
                 </div>
@@ -414,7 +768,7 @@
                     <div class="flex items-center mb-6">
                         <img src="askpoint-logo.png" alt="AskPoint Logo" class="h-10 w-auto">
                     </div>
-                    <p class="text-gray-400 mb-4">Premium data analytics education with industry-aligned curriculum and expert mentorship.</p>
+                    <p class="text-gray-400 mb-4">💻 AskPoint Solutions - Your Career in Code. Starts Here. Empowering Tier-2 Talent for Tier-1 Opportunities with intensive tech bootcamp training.</p>
                     <div class="flex space-x-4">
                         <a href="#" class="text-gray-400 hover:text-white"><i data-feather="facebook"></i></a>
                         <a href="#" class="text-gray-400 hover:text-white"><i data-feather="twitter"></i></a>
@@ -426,21 +780,22 @@
                     <h3 class="text-lg font-bold mb-6">Quick Links</h3>
                     <ul class="space-y-3">
                         <li><a href="#" class="text-gray-400 hover:text-white transition">Home</a></li>
-                        <li><a href="#courses" class="text-gray-400 hover:text-white transition">Courses</a></li>
+                        <li><a href="#bootcamp" class="text-gray-400 hover:text-white transition">Bootcamp</a></li>
                         <li><a href="#facilities" class="text-gray-400 hover:text-white transition">Facilities</a></li>
                         <li><a href="#contact" class="text-gray-400 hover:text-white transition">Contact</a></li>
                         <li><a href="#" class="text-gray-400 hover:text-white transition">Privacy Policy</a></li>
                     </ul>
                 </div>
                 <div>
-                    <h3 class="text-lg font-bold mb-6">Our Course</h3>
+                    <h3 class="text-lg font-bold mb-6">Our Programs</h3>
                     <ul class="space-y-3">
-                        <li><a href="#" class="text-gray-400 hover:text-white transition">Data Analytics Professional</a></li>
+                        <li><a href="#bootcamp" class="text-gray-400 hover:text-white transition">Intensive Tech Bootcamp</a></li>
+                        <li><a href="#bootcamp" class="text-gray-400 hover:text-white transition">Interview Guarantee Program</a></li>
                     </ul>
                 </div>
                 <div>
                     <h3 class="text-lg font-bold mb-6">Newsletter</h3>
-                    <p class="text-gray-400 mb-4">Subscribe to our newsletter for course updates and data industry insights.</p>
+                    <p class="text-gray-400 mb-4">Subscribe to our newsletter for bootcamp updates and tech industry insights.</p>
                     <form class="flex">
                         <input type="email" placeholder="Your email" class="px-4 py-3 rounded-l-lg text-dark focus:outline-none w-full" inputmode="email" aria-label="Your email">
                         <button type="submit" class="bg-primary hover:bg-primary-dark px-4 py-3 rounded-r-lg" aria-label="Subscribe">
@@ -461,17 +816,17 @@
             const prefersReducedMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
             if (!prefersReducedMotion && window.VANTA && window.THREE) {
                 try {
-                    VANTA.NET({
+        VANTA.NET({
                         el: '#vanta-bg',
-                        mouseControls: true,
-                        touchControls: true,
-                        gyroControls: false,
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
                         minHeight: 200.0,
                         minWidth: 200.0,
                         scale: 1.0,
                         scaleMobile: 1.0,
-                        color: 0x3b82f6,
-                        backgroundColor: 0x1e293b,
+            color: 0x3b82f6,
+            backgroundColor: 0x1e293b,
                         points: 12.0,
                         maxDistance: 22.0,
                         spacing: 18.0
@@ -480,27 +835,129 @@
             }
 
             // Mobile menu toggle with ARIA updates
-            const menuBtn = document.getElementById('menu-btn');
-            const mobileMenu = document.getElementById('mobile-menu');
+        const menuBtn = document.getElementById('menu-btn');
+            const closeMenuBtn = document.getElementById('close-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+            function openMenu() {
+                const menuItems = document.getElementById('menu-items');
+                const nav = document.querySelector('nav');
+                
+                // Hide navigation header
+                if (nav) {
+                    nav.style.transform = 'translateY(-100%)';
+                    nav.style.transition = 'transform 0.3s ease-in-out';
+                }
+                
+                // Show menu and start animation
+                mobileMenu.classList.remove('opacity-0', 'pointer-events-none');
+                mobileMenu.classList.add('opacity-100');
+                menuBtn.setAttribute('aria-expanded', 'true');
+                document.body.style.overflow = 'hidden';
+                
+                // Add blackish blur effect to all main content sections
+                const contentSections = ['#vanta-bg', '#courses', '#facilities', '#contact', 'footer'];
+                contentSections.forEach(selector => {
+                    const section = document.querySelector(selector);
+                    if (section) {
+                        section.style.filter = 'blur(8px) brightness(0.3) contrast(0.8)';
+                        section.style.transition = 'filter 0.3s ease-in-out';
+                    }
+                });
+                
+                // Also blur any sections without IDs (like features section)
+                const allSections = document.querySelectorAll('body > div:not(nav):not(#mobile-menu), footer');
+                allSections.forEach(section => {
+                    if (section && !section.id) {
+                        section.style.filter = 'blur(8px) brightness(0.3) contrast(0.8)';
+                        section.style.transition = 'filter 0.3s ease-in-out';
+                    }
+                });
+                
+                // Animate menu items in
+                setTimeout(() => {
+                    if (menuItems) {
+                        menuItems.classList.remove('translate-y-8');
+                        menuItems.classList.add('translate-y-0');
+                    }
+                }, 100);
+            }
+            
+            function closeMenu() {
+                const menuItems = document.getElementById('menu-items');
+                const nav = document.querySelector('nav');
+                
+                // Show navigation header again
+                if (nav) {
+                    nav.style.transform = 'translateY(0)';
+                }
+                
+                // Animate menu items out
+                if (menuItems) {
+                    menuItems.classList.remove('translate-y-0');
+                    menuItems.classList.add('translate-y-8');
+                }
+                
+                // Remove blur effect from all main content sections
+                const contentSections = ['#vanta-bg', '#courses', '#facilities', '#contact', 'footer'];
+                contentSections.forEach(selector => {
+                    const section = document.querySelector(selector);
+                    if (section) {
+                        section.style.filter = 'none';
+                    }
+                });
+                
+                // Also remove blur from sections without IDs
+                const allSections = document.querySelectorAll('body > div:not(nav):not(#mobile-menu), footer');
+                allSections.forEach(section => {
+                    if (section) {
+                        section.style.filter = 'none';
+                    }
+                });
+                
+                // Hide menu after animation
+                mobileMenu.classList.remove('opacity-100');
+                mobileMenu.classList.add('opacity-0');
+                
+                setTimeout(() => {
+                    mobileMenu.classList.add('pointer-events-none');
+                    menuBtn.setAttribute('aria-expanded', 'false');
+                    document.body.style.overflow = '';
+                }, 300);
+            }
+            
             if (menuBtn && mobileMenu) {
-                menuBtn.addEventListener('click', () => {
-                    const isHidden = mobileMenu.classList.toggle('hidden');
-                    menuBtn.setAttribute('aria-expanded', String(!isHidden));
+                menuBtn.addEventListener('click', openMenu);
+                
+                if (closeMenuBtn) {
+                    closeMenuBtn.addEventListener('click', closeMenu);
+                }
+                
+                // Close menu when clicking on menu links
+                mobileMenu.querySelectorAll('a[href^="#"]').forEach(link => {
+                    link.addEventListener('click', closeMenu);
+                });
+                
+                // Close menu when clicking outside the menu content (on the background overlay)
+                mobileMenu.addEventListener('click', function(e) {
+                    // Only close if clicking directly on the overlay (not on menu content)
+                    if (e.target === mobileMenu || e.target.classList.contains('bg-dark')) {
+                        closeMenu();
+                    }
                 });
             }
 
             // Smooth scrolling for anchor links (ignore bare '#')
             document.querySelectorAll('a[href^="#"]:not([href="#"])').forEach(anchor => {
-                anchor.addEventListener('click', function (e) {
+            anchor.addEventListener('click', function (e) {
                     const targetSelector = this.getAttribute('href');
                     const target = targetSelector ? document.querySelector(targetSelector) : null;
                     if (target) {
-                        e.preventDefault();
+                e.preventDefault();
                         target.scrollIntoView({ behavior: 'smooth' });
                         // Close mobile menu after selection on small screens
                         if (mobileMenu && !mobileMenu.classList.contains('hidden')) {
-                            mobileMenu.classList.add('hidden');
-                            menuBtn && menuBtn.setAttribute('aria-expanded', 'false');
+                            closeMenu();
                         }
                     }
                 });
@@ -514,12 +971,12 @@
             // Smooth text rotation animation for hero text
             const heroText = document.getElementById('hero-text');
             const phrases = [
-                'Unlock Your <span class="text-accent">Data Potential</span>',
-                'Master <span class="text-accent">Analytics Skills</span>',
-                'Build Your <span class="text-accent">Data Career</span>',
-                'Transform with <span class="text-accent">Data Science</span>',
-                'Excel in <span class="text-accent">Business Intelligence</span>',
-                'Start Your <span class="text-accent">Data Journey</span>'
+                'Your Career in <span class="text-accent">Code</span>',
+                'Master <span class="text-accent">Python & SQL</span>',
+                'Build <span class="text-accent">AI Solutions</span>',
+                'Transform with <span class="text-accent">Technology</span>',
+                'Excel in <span class="text-accent">Software Development</span>',
+                'Start Your <span class="text-accent">Tech Journey</span>'
             ];
             let currentPhrase = 0;
 
@@ -544,19 +1001,84 @@
                 setInterval(rotateText, 3000);
             }, 2000);
 
+            // Contact form to WhatsApp
+            const contactForm = document.getElementById('contact-form');
+            if (contactForm) {
+                contactForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    
+                    // Get form data
+                    const formData = new FormData(contactForm);
+                    const name = formData.get('name');
+                    const email = formData.get('email');
+                    const phone = formData.get('phone');
+                    const course = formData.get('course');
+                    const message = formData.get('message');
+                    
+                    // Create WhatsApp message
+                    let whatsappMessage = `*New Inquiry from AskPoint Website*\n\n`;
+                    whatsappMessage += `*Name:* ${name}\n`;
+                    whatsappMessage += `*Email:* ${email}\n`;
+                    whatsappMessage += `*Phone:* ${phone}\n`;
+                    
+                    if (course) {
+                        whatsappMessage += `*Course Interested:* ${course}\n`;
+                    }
+                    
+                    if (message) {
+                        whatsappMessage += `*Message:* ${message}\n`;
+                    }
+                    
+                    // Encode message for URL
+                    const encodedMessage = encodeURIComponent(whatsappMessage);
+                    
+                    // Open WhatsApp with the message
+                    const whatsappURL = `https://wa.me/917975423882?text=${encodedMessage}`;
+                    window.open(whatsappURL, '_blank');
+                    
+                    // Reset form
+                    contactForm.reset();
+                    
+                    // Show success message
+                    alert('Redirecting to WhatsApp with your message!');
+                });
+            }
+
+            // Scroll progress bar
+            const scrollProgress = document.getElementById('scroll-progress');
+            
+            function updateScrollProgress() {
+                const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+                const scrollHeight = document.documentElement.scrollHeight - window.innerHeight;
+                const scrollPercent = (scrollTop / scrollHeight) * 100;
+                
+                if (scrollProgress) {
+                    scrollProgress.style.width = Math.min(scrollPercent, 100) + '%';
+                }
+            }
+            
+            window.addEventListener('scroll', updateScrollProgress);
+            window.addEventListener('resize', updateScrollProgress);
+
             // Back to top button
             const backToTop = document.createElement('button');
             backToTop.setAttribute('type', 'button');
             backToTop.setAttribute('aria-label', 'Back to top');
-            backToTop.className = 'fixed bottom-6 right-6 z-50 hidden md:flex items-center justify-center w-12 h-12 rounded-full bg-primary text-white shadow-lg hover:bg-primary/90 transition';
-            backToTop.innerHTML = '<i data-feather="arrow-up"></i>';
+            backToTop.className = 'fixed bottom-6 right-6 z-50 hidden items-center justify-center w-12 h-12 rounded-full bg-primary text-white shadow-lg hover:bg-primary-dark transition-all duration-300 transform hover:scale-110';
+            backToTop.innerHTML = '<i data-feather="arrow-up" class="w-5 h-5"></i>';
             document.body.appendChild(backToTop);
             if (window.feather && typeof feather.replace === 'function') {
                 feather.replace();
             }
             window.addEventListener('scroll', () => {
                 const shouldShow = window.scrollY > 600;
-                backToTop.classList.toggle('hidden', !shouldShow);
+                if (shouldShow) {
+                    backToTop.classList.remove('hidden');
+                    backToTop.classList.add('flex');
+                } else {
+                    backToTop.classList.add('hidden');
+                    backToTop.classList.remove('flex');
+                }
             });
             backToTop.addEventListener('click', () => {
                 window.scrollTo({ top: 0, behavior: 'smooth' });
